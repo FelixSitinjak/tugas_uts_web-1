@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Toko Buku</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="login">
+  <div class="container center">
+    <div class="card auth">
+      <h1>Toko Buku</h1>
+      <div class="field">
+        <label for="loginEmail">Email</label>
+        <input type="email" id="loginEmail" placeholder="email@contoh.com" required>
+      </div>
+      <div class="field">
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" placeholder="••••••••" required>
+      </div>
+      <button class="btn primary full" id="btnLogin">Login</button>
+      <div class="row space-between mt-12">
+        <button class="link" id="btnForgot">Lupa Password</button>
+        <button class="link" id="btnRegister">Daftar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modalForgot">
+    <div class="modal-content">
+      <h3>Lupa Password</h3>
+      <div class="field">
+        <label>Email</label>
+        <input type="email" id="forgotEmail" placeholder="email@contoh.com">
+      </div>
+      <div class="row end gap-8">
+        <button class="btn" data-close="#modalForgot">Tutup</button>
+        <button class="btn primary" id="forgotSubmit">Kirim</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modalRegister">
+    <div class="modal-content">
+      <h3>Daftar Akun</h3>
+      <div class="field">
+        <label>Nama</label>
+        <input type="text" id="regNama" placeholder="Nama lengkap">
+      </div>
+      <div class="field">
+        <label>Email</label>
+        <input type="email" id="regEmail" placeholder="email@contoh.com">
+      </div>
+      <div class="field">
+        <label>Password</label>
+        <input type="password" id="regPassword" placeholder="Password">
+      </div>
+      <div class="row end gap-8">
+        <button class="btn" data-close="#modalRegister">Tutup</button>
+        <button class="btn primary" id="registerSubmit">Daftar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

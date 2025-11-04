@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Toko Buku</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="dashboard">
+  <header class="topbar">
+    <div class="container row space-between align-center">
+      <div class="row align-center gap-8">
+        <img src="assets/toko buku.png" alt="logo" class="logo" onerror="this.style.display='none'">
+        <strong>Toko Buku</strong>
+      </div>
+      <div class="row align-center gap-12">
+        <span id="greeting"></span>
+        <button class="btn" id="btnLogout">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="grid-2 gap-16 mt-16">
+      <a class="card nav" href="stok.html">Informasi Stok/Katalog</a>
+      <a class="card nav" href="tracking.html">Tracking Pengiriman</a>
+      <a class="card nav" href="checkout.html">Laporan Pemesanan</a>
+      <a class="card nav" href="checkout.html#history">Histori Transaksi</a>
+    </div>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

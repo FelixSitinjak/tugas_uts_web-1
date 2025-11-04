@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tracking Pengiriman - Toko Buku</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="tracking">
+  <header class="topbar">
+    <div class="container row space-between align-center">
+      <a class="btn" href="dashboard.html">Kembali</a>
+      <strong>Tracking Pengiriman</strong>
+      <span></span>
+    </div>
+  </header>
+
+  <main class="container mt-16">
+    <div class="card">
+      <div class="row gap-8">
+        <input type="text" id="inputDO" placeholder="Nomor Delivery Order">
+        <button class="btn primary" id="btnCariDO">Cari</button>
+      </div>
+    </div>
+
+    <div class="card mt-16" id="hasilDO" style="display:none">
+      <div class="grid-2 gap-16">
+        <div>
+          <div class="field small"><label>Nama Pemesan</label><div id="doNama"></div></div>
+          <div class="field small"><label>Status</label><div id="doStatus"></div></div>
+          <div class="progress"><div id="doProgress"></div></div>
+        </div>
+        <div>
+          <div class="field small"><label>Ekspedisi</label><div id="doEkspedisi"></div></div>
+          <div class="field small"><label>Tanggal Kirim</label><div id="doTanggal"></div></div>
+          <div class="field small"><label>Jenis Paket</label><div id="doPaket"></div></div>
+          <div class="field small"><label>Total Pembayaran</label><div id="doTotal"></div></div>
+        </div>
+      </div>
+      <h3 class="mt-16">Detail Perjalanan</h3>
+      <ul id="doPerjalanan" class="timeline"></ul>
+    </div>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

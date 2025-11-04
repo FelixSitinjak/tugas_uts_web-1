@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stok/Katalog - Toko Buku</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="stok">
+  <header class="topbar">
+    <div class="container row space-between align-center">
+      <a class="btn" href="dashboard.html">Kembali</a>
+      <strong>Informasi Stok/Katalog</strong>
+      <span></span>
+    </div>
+  </header>
+
+  <main class="container mt-16">
+    <div class="card">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Kode</th>
+            <th>Cover</th>
+            <th>Nama</th>
+            <th>Jenis</th>
+            <th>Edisi</th>
+            <th>Stok</th>
+            <th>Harga</th>
+          </tr>
+        </thead>
+        <tbody id="stokBody"></tbody>
+      </table>
+    </div>
+
+    <div class="card mt-16">
+      <h3>Tambah Stok Baru</h3>
+      <div class="grid-2 gap-12 mt-8">
+        <input type="text" id="inKode" placeholder="Kode">
+        <input type="text" id="inNama" placeholder="Nama Buku">
+        <input type="text" id="inJenis" placeholder="Jenis">
+        <input type="number" id="inEdisi" placeholder="Edisi">
+        <input type="number" id="inStok" placeholder="Stok">
+        <input type="text" id="inHarga" placeholder="Harga contoh: Rp 100.000">
+      </div>
+      <div class="row end mt-12">
+        <button class="btn primary" id="btnAddStock">Tambah</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

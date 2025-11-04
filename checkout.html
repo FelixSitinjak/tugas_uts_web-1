@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemesanan - Toko Buku</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="checkout">
+  <header class="topbar">
+    <div class="container row space-between align-center">
+      <a class="btn" href="dashboard.html">Kembali</a>
+      <strong>Halaman Pemesanan</strong>
+      <span></span>
+    </div>
+  </header>
+
+  <main class="container mt-16">
+    <div class="grid-2 gap-16">
+      <div class="card">
+        <div class="row gap-8">
+          <select id="selectItem"></select>
+          <input type="number" id="qtyItem" min="1" value="1">
+          <button class="btn" id="btnAddCart">Tambah</button>
+        </div>
+        <table class="table mt-12">
+          <thead>
+            <tr>
+              <th>Kode</th>
+              <th>Nama</th>
+              <th>Qty</th>
+              <th>Harga</th>
+              <th>Subtotal</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody id="cartBody"></tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4" class="right">Total</td>
+              <td id="cartTotal">Rp 0</td>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <div class="card">
+        <h3>Data Pemesan</h3>
+        <div class="field">
+          <label>Nama</label>
+          <input id="custNama" type="text" placeholder="Nama pemesan">
+        </div>
+        <div class="field">
+          <label>Alamat</label>
+          <textarea id="custAlamat" rows="3" placeholder="Alamat lengkap"></textarea>
+        </div>
+        <div class="field">
+          <label>Metode Pembayaran</label>
+          <select id="custBayar">
+            <option value="Transfer Bank">Transfer Bank</option>
+            <option value="QRIS">QRIS</option>
+            <option value="COD">COD</option>
+          </select>
+        </div>
+        <button class="btn primary full" id="btnSubmitOrder">Buat Pesanan</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
